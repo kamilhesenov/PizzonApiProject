@@ -19,5 +19,7 @@ namespace Data.Entities
         public ICollection<Review> Reviews { get; set; }
         public int CategoryId { get; set; }
         public Category Category { get; set; }
+        public bool IsPromo { get; set; }
+        public int OrderBy { get; set; }
     }
 }

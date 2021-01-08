@@ -1,8 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿
 
-namespace Data.Entities.Home
+namespace Data.Entities
 {
    public class Associate : BaseEntity
     {

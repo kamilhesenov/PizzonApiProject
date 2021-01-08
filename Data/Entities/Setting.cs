@@ -13,5 +13,8 @@ namespace Data.Entities
         public DateTime OpenTime { get; set; }
         public DateTime CloseTime { get; set; }
         public string WeekPeriod { get; set; }
+        public string ContactInfo { get; set; }
+        public string Longitude { get; set; }
+        public string Latitude { get; set; }
     }
 }

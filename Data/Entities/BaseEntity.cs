@@ -1,6 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
+
 
 namespace Data.Entities
 {
@@ -11,7 +10,5 @@ namespace Data.Entities
         public DateTime? ModifiedDate { get; set; }
         public string AddedBy { get; set; }
         public string ModifiedBy { get; set; }
-        public string Header { get; set; }
-        public string Body { get; set; }
     }
 }

@@ -1,6 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace Data.Entities
 {
@@ -12,7 +10,6 @@ namespace Data.Entities
         public string BookInfo { get; set; }
         public DateTime OpenTime { get; set; }
         public DateTime CloseTime { get; set; }
-        public string WeekPeriod { get; set; }
         public string ContactInfo { get; set; }
         public string Longitude { get; set; }
         public string Latitude { get; set; }

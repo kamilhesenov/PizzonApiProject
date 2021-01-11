@@ -6,7 +6,7 @@ namespace Data.Entities
     {
         
         public string Title { get; set; }
-        public string Photo { get; set; }
+        public string PhotoUrl { get; set; }
         public string Path { get; set; }
         public string Link { get; set; }
         public bool IsMenu{ get; set; }

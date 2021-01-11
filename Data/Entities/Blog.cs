@@ -13,7 +13,6 @@ namespace Data.Entities
         public string Text { get; set; }
         public string PhotoUrl { get; set; }
         public int OrderBy { get; set; }
-
         public ICollection<Comment> Comments { get; set; }
     }
 }

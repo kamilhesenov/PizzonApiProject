@@ -6,14 +6,8 @@ using System.Text;
 namespace Data.Entities
 {
    public class Review : BaseEntity
-    {
-        
-        [Required(ErrorMessage = "Please enter Fullname")]
-        [MaxLength(50)]
+    { 
         public string Fullname { get; set; }
-
-        [Required(ErrorMessage = "Please enter Email Address")]
-        [DataType(DataType.EmailAddress)]
         public string Email { get; set; }
         public string Message { get; set; }
         public string Subject { get; set; }

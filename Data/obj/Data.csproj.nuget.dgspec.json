@@ -1,32 +1,35 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Kamil\\Desktop\\PizzonApi\\Data\\Data.csproj": {}
+    "C:\\Users\\n_ilkin\\OneDrive\\Desktop\\my Code\\PizzonApiProject\\Data\\Data.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Kamil\\Desktop\\PizzonApi\\Data\\Data.csproj": {
+    "C:\\Users\\n_ilkin\\OneDrive\\Desktop\\my Code\\PizzonApiProject\\Data\\Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Kamil\\Desktop\\PizzonApi\\Data\\Data.csproj",
+        "projectUniqueName": "C:\\Users\\n_ilkin\\OneDrive\\Desktop\\my Code\\PizzonApiProject\\Data\\Data.csproj",
         "projectName": "Data",
-        "projectPath": "C:\\Users\\Kamil\\Desktop\\PizzonApi\\Data\\Data.csproj",
-        "packagesPath": "C:\\Users\\Kamil\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Kamil\\Desktop\\PizzonApi\\Data\\obj\\",
+        "projectPath": "C:\\Users\\n_ilkin\\OneDrive\\Desktop\\my Code\\PizzonApiProject\\Data\\Data.csproj",
+        "packagesPath": "C:\\Users\\n_ilkin\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\n_ilkin\\OneDrive\\Desktop\\my Code\\PizzonApiProject\\Data\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Kamil\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\n_ilkin\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "netstandard2.0"
+          "netstandard2.1"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "netstandard2.0": {
-            "targetAlias": "netstandard2.0",
+          "netstandard2.1": {
+            "targetAlias": "netstandard2.1",
             "projectReferences": {}
           }
         },
@@ -37,14 +40,16 @@
         }
       },
       "frameworks": {
-        "netstandard2.0": {
-          "targetAlias": "netstandard2.0",
+        "netstandard2.1": {
+          "targetAlias": "netstandard2.1",
           "dependencies": {
-            "NETStandard.Library": {
-              "suppressParent": "All",
+            "Microsoft.EntityFrameworkCore": {
               "target": "Package",
-              "version": "[2.0.3, )",
-              "autoReferenced": true
+              "version": "[5.0.1, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[5.0.1, )"
             },
             "System.ComponentModel.Annotations": {
               "target": "Package",
@@ -61,6 +66,11 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "frameworkReferences": {
+            "NETStandard.Library": {
+              "privateAssets": "all"
+            }
+          },
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.101\\RuntimeIdentifierGraph.json"
         }
       }

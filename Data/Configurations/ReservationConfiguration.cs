@@ -4,7 +4,7 @@ using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
 namespace Data.Configurations
 {
-    class ReservationConfiguration : IEntityTypeConfiguration<Reservation>
+    public class ReservationConfiguration : IEntityTypeConfiguration<Reservation>
     {
         public void Configure(EntityTypeBuilder<Reservation> builder)
         {

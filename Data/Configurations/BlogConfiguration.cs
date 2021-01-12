@@ -4,7 +4,7 @@ using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
 namespace Data.Configurations
 {
-    class BlogConfiguration : IEntityTypeConfiguration<Blog>
+    public class BlogConfiguration : IEntityTypeConfiguration<Blog>
     {
         public void Configure(EntityTypeBuilder<Blog> builder)
         {

@@ -4,7 +4,7 @@ using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
 namespace Data.Configurations
 {
-    class BannerConfiguration : IEntityTypeConfiguration<Banner>
+    public class BannerConfiguration : IEntityTypeConfiguration<Banner>
     {
         public void Configure(EntityTypeBuilder<Banner> builder)
         {

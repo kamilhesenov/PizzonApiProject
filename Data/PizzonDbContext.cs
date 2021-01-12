@@ -4,7 +4,10 @@ using Microsoft.EntityFrameworkCore;
 
 namespace Data
 {
-    class PizzonDbContext: DbContext
+
+    //dotnet ef --startup-project.\PizzonApi\PizzonApi.csproj migrations add ProductSchema -p.\Data\Data.csproj
+    //dotnet ef --startup-project .\PizzonApi\PizzonApi.csproj database update -p.\Data\Data.csproj
+    public class PizzonDbContext: DbContext
     {
         public PizzonDbContext(DbContextOptions<PizzonDbContext> options) : base(options) { }
 

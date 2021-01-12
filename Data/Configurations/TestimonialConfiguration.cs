@@ -4,7 +4,7 @@ using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
 namespace Data.Configurations
 {
-    class TestimonialConfiguration : IEntityTypeConfiguration<Testimonial>
+    public class TestimonialConfiguration : IEntityTypeConfiguration<Testimonial>
     {
         public void Configure(EntityTypeBuilder<Testimonial> builder)
         {

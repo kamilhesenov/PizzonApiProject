@@ -1,11 +1,12 @@
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.EntityFrameworkCore;
 using Data;
+using AutoMapper;
+
 namespace PizzonApi
 {
     public class Startup
@@ -22,7 +23,9 @@ namespace PizzonApi
         {
             string connect = Configuration.GetConnectionString("DefaultConnection");
             services.AddControllers();
-            //services.AddDbContext<PizzonDbContext>(options => options.UseSqlServer(connect));
+            services.AddDbContext<PizzonDbContext>(options => options.UseSqlServer(connect));
+            services.AddTransient<IUnitOfWork,UnitOfWork>();
+            services.AddAutoMapper(typeof(Startup));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

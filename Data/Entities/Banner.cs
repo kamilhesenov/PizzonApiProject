@@ -2,7 +2,7 @@
 
 namespace Data.Entities
 {
-    class Banner : BaseEntity 
+   public class Banner : BaseEntity 
     {
         public string PhotoUrl { get; set; }
         public bool IsBanner { get; set; }

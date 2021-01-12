@@ -4,7 +4,7 @@ using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
 namespace Data.Configurations
 {
-    class AboutUsConfiguration : IEntityTypeConfiguration<AboutUs>
+    public class AboutUsConfiguration : IEntityTypeConfiguration<AboutUs>
     {
         public void Configure(EntityTypeBuilder<AboutUs> builder)
         {

@@ -7,7 +7,7 @@ using System.Text;
 
 namespace Data.Configurations
 {
-    class AssociateConfiguration : IEntityTypeConfiguration<Associate>
+    public class AssociateConfiguration : IEntityTypeConfiguration<Associate>
     {
         public void Configure(EntityTypeBuilder<Associate> builder)
         {

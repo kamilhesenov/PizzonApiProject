@@ -4,7 +4,7 @@ using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
 namespace Data.Configurations
 {
-    class ContactConfiguration : IEntityTypeConfiguration<Contact>
+    public class ContactConfiguration : IEntityTypeConfiguration<Contact>
     {
         public void Configure(EntityTypeBuilder<Contact> builder)
         {

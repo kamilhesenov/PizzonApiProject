@@ -4,7 +4,7 @@ using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
 namespace Data.Configurations
 {
-    class ReviewConfiguration : IEntityTypeConfiguration<Review>
+    public class ReviewConfiguration : IEntityTypeConfiguration<Review>
     {
         public void Configure(EntityTypeBuilder<Review> builder)
         {

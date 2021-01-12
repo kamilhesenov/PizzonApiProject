@@ -8,12 +8,12 @@ namespace Data.Entities
    public class Product : BaseEntity
     {
         public string PhotoUrl { get; set; }
-        public string[] PhotosUrl { get; set; }
+        public string PhotosUrl { get; set; }
         public string Name { get; set; }
         public string Description { get; set; }
         public string Detail { get; set; }
         public ProductSize Size { get; set; }
-        public string[] ProductType { get; set; } 
+        public string ProductType { get; set; } 
         public bool IsPromo { get; set; }
         public int OrderBy { get; set; }
         public int StockId { get; set; }

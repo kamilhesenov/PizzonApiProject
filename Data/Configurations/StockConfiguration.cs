@@ -4,9 +4,9 @@ using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
 namespace Data.Configurations
 {
-    class SocialLinkConfiguration : IEntityTypeConfiguration<SocialLink>
+    public class StockConfiguration : IEntityTypeConfiguration<Stock>
     {
-        public void Configure(EntityTypeBuilder<SocialLink> builder)
+        public void Configure(EntityTypeBuilder<Stock> builder)
         {
             builder.
                 HasKey(c => c.Id);
@@ -14,11 +14,18 @@ namespace Data.Configurations
                 Property(c => c.Id).
                 ValueGeneratedOnAdd();
             builder.
-                Property(c => c.Link).
-                HasMaxLength(500).
+                Property(c => c.Status).
+                HasDefaultValue(false);
+            builder.
+                Property(c => c.Quantity).
                 IsRequired();
             builder.
-                ToTable("SocialLinks");
+                Property(c => c.Price).
+                HasColumnType("money").
+                IsRequired();
+
+            builder.
+                ToTable("Stocks");
 
         }
     }

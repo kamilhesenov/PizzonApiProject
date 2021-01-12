@@ -4,7 +4,7 @@ using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
 namespace Data.Configurations
 {
-    class BreadcrumbConfiguration : IEntityTypeConfiguration<Breadcrumb>
+    public class BreadcrumbConfiguration : IEntityTypeConfiguration<Breadcrumb>
     {
         public void Configure(EntityTypeBuilder<Breadcrumb> builder)
         {

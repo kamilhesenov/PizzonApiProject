@@ -11,7 +11,7 @@ namespace PizzonApi.Mapping
         {
             CreateMap<Banner, BannerResource>()
                 .ForMember(d => d.PhotoUrl, opt => opt.MapFrom(src => BaseUrl + src.PhotoUrl))
-                .ForMember(d => d.IsBanner,opt => opt.MapFrom(src => true));
+                .ForMember(d => d.IsBanner, opt => opt.MapFrom(src => src.IsBanner==true));
         }
     }
 }

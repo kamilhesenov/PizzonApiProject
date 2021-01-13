@@ -22,13 +22,21 @@ namespace PizzonApi.Controllers.V1
             _mapper = mapper;
         }
 
-        [Route("banner")]
+        [Route("isBanner")]
         [HttpGet]
-        public async Task<IActionResult> GetBannerAsync()
+        public async Task<IActionResult> GetIsBannerAsync()
         {
-            var banners = await _unitOfWork.Banner.GetAllAsync();
-            var bannersResources = _mapper.Map<IEnumerable<Banner>, IEnumerable<BannerResource>>(banners);
-            return Ok(bannersResources);
+            var isBanners = await _unitOfWork.Banner.GetIsBannerAsync();
+            var isBannerResources = _mapper.Map<IEnumerable<Banner>, IEnumerable<BannerResource>>(isBanners);
+            return Ok(isBannerResources);
+        }
+        [Route("isService")]
+        [HttpGet]
+        public async Task<IActionResult> GetIsServiceAsync()
+        {
+            var isService = await _unitOfWork.Banner.GetIsServiceAsync();
+            var isServiceResources = _mapper.Map<IEnumerable<Banner>, IEnumerable<BannerResource>>(isService);
+            return Ok(isServiceResources);
         }
     }
 }

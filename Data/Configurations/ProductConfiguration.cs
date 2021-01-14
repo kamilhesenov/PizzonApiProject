@@ -14,14 +14,6 @@ namespace Data.Configurations
                 Property(c => c.Id).
                 ValueGeneratedOnAdd();
             builder.
-                Property(c => c.PhotoUrl).
-                HasMaxLength(100).
-                IsRequired();
-            builder.
-                Property(c => c.PhotosUrl).
-                HasMaxLength(100).
-                IsRequired();
-            builder.
                 Property(c => c.Name).
                 HasMaxLength(100).
                 IsRequired();

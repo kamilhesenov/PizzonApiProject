@@ -6017,11 +6017,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\n_ilkin\\OneDrive\\Desktop\\my Code\\PizzonApiProject\\PizzonApi\\PizzonApi.csproj",
+      "projectUniqueName": "C:\\Users\\n_ilkin\\OneDrive\\Desktop\\PizzonApiProject\\PizzonApi\\PizzonApi.csproj",
       "projectName": "PizzonApi",
-      "projectPath": "C:\\Users\\n_ilkin\\OneDrive\\Desktop\\my Code\\PizzonApiProject\\PizzonApi\\PizzonApi.csproj",
+      "projectPath": "C:\\Users\\n_ilkin\\OneDrive\\Desktop\\PizzonApiProject\\PizzonApi\\PizzonApi.csproj",
       "packagesPath": "C:\\Users\\n_ilkin\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\n_ilkin\\OneDrive\\Desktop\\my Code\\PizzonApiProject\\PizzonApi\\obj\\",
+      "outputPath": "C:\\Users\\n_ilkin\\OneDrive\\Desktop\\PizzonApiProject\\PizzonApi\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -6041,8 +6041,8 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "projectReferences": {
-            "C:\\Users\\n_ilkin\\OneDrive\\Desktop\\my Code\\PizzonApiProject\\Data\\Data.csproj": {
-              "projectPath": "C:\\Users\\n_ilkin\\OneDrive\\Desktop\\my Code\\PizzonApiProject\\Data\\Data.csproj"
+            "C:\\Users\\n_ilkin\\OneDrive\\Desktop\\PizzonApiProject\\Data\\Data.csproj": {
+              "projectPath": "C:\\Users\\n_ilkin\\OneDrive\\Desktop\\PizzonApiProject\\Data\\Data.csproj"
             }
           }
         }

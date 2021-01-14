@@ -1,6 +1,7 @@
 ﻿using Data.Configurations;
 using Data.Entities;
 using Microsoft.EntityFrameworkCore;
+using System;
 
 namespace Data
 {
@@ -13,6 +14,8 @@ namespace Data
 
         protected override void OnModelCreating(ModelBuilder builder)
         {
+   
+
             builder.ApplyConfiguration(new AboutUsConfiguration());
             builder.ApplyConfiguration(new BannerConfiguration());
             builder.ApplyConfiguration(new BreadcrumbConfiguration());
@@ -29,6 +32,102 @@ namespace Data
             builder.ApplyConfiguration(new TestimonialConfiguration());
             builder.ApplyConfiguration(new StockConfiguration());
             builder.ApplyConfiguration(new UserConfiguration());
+
+            base.OnModelCreating(builder);
+
+            // Banner/isBanner
+            builder.Entity<Banner>().HasData(
+                new Banner
+                {
+                    Id = 2,
+                    PhotoUrl = "banner-bg-1.png",
+                    IsBanner = true,
+                    IsService = false,
+                    Header = "Quality Foods",
+                    Body = "Healthy Food for healthy body",
+                    AddedDate = DateTime.Now,
+                    ModifiedDate = DateTime.Now,
+                    AddedBy = "System",
+                    ModifiedBy = "System"
+                },
+                new Banner
+                {
+                    Id = 3,
+                    PhotoUrl = "banner-bg-2.png",
+                    IsBanner = true,
+                    IsService = false,
+                    Header = "Quality Foods",
+                    Body = "Healthy Food for healthy body",
+                    AddedDate = DateTime.Now,
+                    ModifiedDate = DateTime.Now,
+                    AddedBy = "System",
+                    ModifiedBy = "System"
+
+                },
+                new Banner
+                 {
+                     Id = 4,
+                     PhotoUrl = "banner-bg-3.png",
+                     IsBanner = true,
+                     IsService = false,
+                     Header = "Quality Foods",
+                     Body = "Healthy Food for healthy body",
+                     AddedDate = DateTime.Now,
+                     ModifiedDate = DateTime.Now,
+                     AddedBy = "System",
+                     ModifiedBy = "System"
+
+                 },
+            // Banner/isService
+                new Banner
+                {
+                    Id = 5,
+                    PhotoUrl = "order-1.svg",
+                    IsBanner = false,
+                    IsService = true,
+                    Header = "ORDER YOUR FOOD",
+                    Body = "Lorem ipsum dolor sit amet, consectetur adipisicing elit, " +
+                           "sed do eius-Lorem ipsum dolor sit amet, consectetur adipisicing elit, " +
+                           "sed do eius-Lorem ipsum dolor sit amet, conse",
+                    AddedDate = DateTime.Now,
+                    ModifiedDate = DateTime.Now,
+                    AddedBy = "System",
+                    ModifiedBy = "System"
+
+                },
+                new Banner
+                {
+                    Id = 6,
+                    PhotoUrl = "order-2.svg",
+                    IsBanner = false,
+                    IsService = true,
+                    Header = "DELIVERY OR PICK UP",
+                    Body = "Lorem ipsum dolor sit amet, consectetur adipisicing elit, " +
+                           "sed do eius-Lorem ipsum dolor sit amet, consectetur adipisicing elit, " +
+                           "sed do eius-Lorem ipsum dolor sit amet, conse",
+                    AddedDate = DateTime.Now,
+                    ModifiedDate = DateTime.Now,
+                    AddedBy = "System",
+                    ModifiedBy = "System"
+
+                },
+                new Banner
+                {
+                    Id = 7,
+                    PhotoUrl = "order-3.svg",
+                    IsBanner = false,
+                    IsService = true,
+                    Header = "DELICIOUS RECEIPE",
+                    Body = "Lorem ipsum dolor sit amet, consectetur adipisicing elit, " +
+                           "sed do eius-Lorem ipsum dolor sit amet, consectetur adipisicing elit, " +
+                           "sed do eius-Lorem ipsum dolor sit amet, conse",
+                    AddedDate = DateTime.Now,
+                    ModifiedDate = DateTime.Now,
+                    AddedBy = "System",
+                    ModifiedBy = "System"
+
+                }
+                ); 
 
         }
         public DbSet<AboutUs> AboutUs { get; set; }

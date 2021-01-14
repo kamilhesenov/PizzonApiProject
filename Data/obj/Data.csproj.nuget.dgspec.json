@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\n_ilkin\\OneDrive\\Desktop\\my Code\\PizzonApiProject\\Data\\Data.csproj": {}
+    "C:\\Users\\n_ilkin\\OneDrive\\Desktop\\PizzonApiProject\\Data\\Data.csproj": {}
   },
   "projects": {
-    "C:\\Users\\n_ilkin\\OneDrive\\Desktop\\my Code\\PizzonApiProject\\Data\\Data.csproj": {
+    "C:\\Users\\n_ilkin\\OneDrive\\Desktop\\PizzonApiProject\\Data\\Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\n_ilkin\\OneDrive\\Desktop\\my Code\\PizzonApiProject\\Data\\Data.csproj",
+        "projectUniqueName": "C:\\Users\\n_ilkin\\OneDrive\\Desktop\\PizzonApiProject\\Data\\Data.csproj",
         "projectName": "Data",
-        "projectPath": "C:\\Users\\n_ilkin\\OneDrive\\Desktop\\my Code\\PizzonApiProject\\Data\\Data.csproj",
+        "projectPath": "C:\\Users\\n_ilkin\\OneDrive\\Desktop\\PizzonApiProject\\Data\\Data.csproj",
         "packagesPath": "C:\\Users\\n_ilkin\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\n_ilkin\\OneDrive\\Desktop\\my Code\\PizzonApiProject\\Data\\obj\\",
+        "outputPath": "C:\\Users\\n_ilkin\\OneDrive\\Desktop\\PizzonApiProject\\Data\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

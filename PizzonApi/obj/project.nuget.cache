@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "6rbBr+tBo+n9dVxpFw/njFKKL4cNftfZPgYsTdavhQxsuMnotB4CePUr9S1Nw2HgXJmMSD31P8uSyQqhKoH+rw==",
+  "dgSpecHash": "VngiLQtWaeRnxOHCMKKPWY/Dhc2Nu9A+m103hROs+IKKfEkfOmA0Wk8M8zPTH+q2QnRosYJncP5QB7W69c8Ypw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\n_ilkin\\OneDrive\\Desktop\\my Code\\PizzonApiProject\\PizzonApi\\PizzonApi.csproj",
+  "projectFilePath": "C:\\Users\\n_ilkin\\OneDrive\\Desktop\\PizzonApiProject\\PizzonApi\\PizzonApi.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\n_ilkin\\.nuget\\packages\\automapper\\10.1.0\\automapper.10.1.0.nupkg.sha512",
     "C:\\Users\\n_ilkin\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\8.1.0\\automapper.extensions.microsoft.dependencyinjection.8.1.0.nupkg.sha512",
